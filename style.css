@@ -92,8 +92,8 @@ body{
 
 @media screen and (max-width: 800px) {
     .card{
-      width: 60px;
-      height: 60px;
+      width: 90px;
+      height: 90px;
     }
     #gameboard{
         
@@ -109,17 +109,27 @@ body{
         background-color: #ff6105;
         font-size: 6px;
   }
+  body{
+    font-family:'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    background-color: #c7cdd3;
+    margin-top: 20px;
 }
-@media screen and (max-width: 300px) {
+}
+@media screen and (max-width: 450px) {
     .card{
-      width: 60px;
-      height: 60px;
+      width: 90px;
+      height: 90px;
     }
     #gameboard{
         
         /*max-width: auto;*/
         display: grid;
-        grid-template: 1fr 1fr 1fr 1fr 1fr 1fr/ 1fr 1fr 1fr;
+        grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr/ 1fr 1fr 1fr;
         gap: 20px;
     
     }

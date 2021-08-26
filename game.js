@@ -14,11 +14,13 @@ let game = {
             'node',
             'react'],
 
+
 cards: null,
 
     setCard: function (id){
-       let card = this.cards.filter(card=>card.id===id)[0];
 
+       let card = this.cards.filter(card=>card.id===id)[0];
+        console.log(card);
        if(card.flipped || this.lockMode){
            return false;
        }
@@ -29,7 +31,7 @@ cards: null,
            return true;
        } else{
            this.secondCard = card;
-           this.firstCard.flipped=true
+           this.secondCard.flipped=true
            this.lockMode = true;
            return true;
        }
@@ -48,7 +50,7 @@ cards: null,
         this.lockMode = false
     },
 
-    unflipCards(){
+    unflipCards: function(){
         this.firstCard.flipped=false
         this.secondCard.flipped=false
         this.clearCards()

@@ -2,10 +2,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
+h1{
+    font-family: sans-serif;
+    position:relative;
+    text-align: center;
+    padding: 10px;
+    color: tomato;
+    font-weight: 900;
+    
+    
+}
 
 body{
+    background-color: #c7cdd3;
+
+}
+
+#container{
     font-family:'Roboto', sans-serif;
     display: flex;
     justify-content: center;
@@ -59,16 +75,16 @@ body{
 
 #gameOver{
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 110%;
+    height: 110%;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
     font-size: 50px;
-    display: none; /*depois o display altera para flex*/
+    display: none; 
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    top: 0; /*como a posição é absoluta, ele cola a margem no topo*/
+    top: 0; 
 }
 
 #restart{
@@ -92,8 +108,8 @@ body{
 
 @media screen and (max-width: 800px) {
     .card{
-      width: 90px;
-      height: 90px;
+      width: 100px;
+      height: 100px;
     }
     #gameboard{
         
@@ -109,7 +125,7 @@ body{
         background-color: #ff6105;
         font-size: 6px;
   }
-  body{
+  #container{
     font-family:'Roboto', sans-serif;
     display: flex;
     justify-content: center;
@@ -122,8 +138,8 @@ body{
 }
 @media screen and (max-width: 450px) {
     .card{
-      width: 90px;
-      height: 90px;
+      width: 95px;
+      height: 95px;
     }
     #gameboard{
         

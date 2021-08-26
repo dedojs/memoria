@@ -54,7 +54,7 @@ cards: null,
         this.clearCards()
     },
 
-    checkGameOver() {
+    checkGameOver: function() {
 
         return this.cards.filter(card => !card.flipped).length == 0;
 

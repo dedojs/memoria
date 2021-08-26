@@ -76,8 +76,8 @@ function flipCard(){
                 game.clearCards();
 
                 if (game.checkGameOver()) {
-                    let gameOverLayer = document.getElementById("gameOver");
-                    gameOverLayer.style.display = 'flex';
+                    let gameOverLayer = document.querySelector("#gameOver");
+                    gameOverLayer.style.display = "flex";
                 }
                
                
